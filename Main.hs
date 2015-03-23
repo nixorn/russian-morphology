@@ -134,6 +134,7 @@ allForm m = do
 indexPage :: H.Html -> H.Html
 indexPage body = H.docTypeHtml $ do
     H.head $ do
+        H.meta ! A.charset "utf-8"
         H.title "Морфология"
         H.link ! A.type_ "text/css" ! A.rel "stylesheet" ! A.href "static/css/style.css"
     H.body $ do
